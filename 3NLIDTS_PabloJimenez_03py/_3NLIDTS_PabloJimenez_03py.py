@@ -2,8 +2,10 @@ import tkinter as tk
 from tkinter import messagebox
 
 def limpiar():
-
-    messagebox.showinfo("Presione el boton limpiar", "Se borraron los valores de los campos")
+    tbCelcius.delete(0, tk.END)
+    tbFahrenheit.delete(0, tk.END)
+    tbKelvin.delete(0, tk.END)
+    messagebox.showinfo("Limpiar", "Se borraron los valores de los campos")
 
 
 
